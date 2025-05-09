@@ -265,9 +265,9 @@
                         At Rachael Model School, we believe that education goes beyond the classroom. Our mission is to nurture confident,<br /><br />
                         well-rounded individuals who are equipped with not only academic knowledge but also strong moral values, critical
                         thinking skills, and a deep respect for others. We are proud to offer a learning environment that is safe, supportive, and stimulating—where every child is encouraged .........<br /><br />
-                        <button class="btn btn-warning btn-lg">Read More</button>
+                        <button class="btn btn-warning btn-lg" id="moreBtn">Read More</button>
 
-                        <span style="display: none;">
+                        <span style="display: none;" id="more">
                         to discover their unique potential. Our dedicated team of educators works tirelessly to ensure that each student
                         receives a balanced and high-quality education that prepares them for the future.
                         
@@ -656,5 +656,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="js/map-script.js"></script>
 
+    <script>
+        $("#moreBtn").click(() => {
+            $("#more").show();
+            $("#moreBtn").hide()
+        })
+
+    </script>
 </body>
 </html>
